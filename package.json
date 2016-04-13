@@ -1,15 +1,19 @@
 {
   "name": "node-express",
   "version": "1.0.0",
-  "description": "Level 2 - Code school course: Building Blocks of Express.js",
+  "description": "Node Express",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "author": "Sandeep Bajaj",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.9.8"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }

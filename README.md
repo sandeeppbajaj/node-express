@@ -10,9 +10,14 @@ Levels are mentioned in the read-me with appropriate notes and steps to start.
 Node
 
 ### Soup to Bits
-- Export app as a module
-- Use www to start app module
+- Add dependency for test modules
+- Write test
 
+##### Steps to test
+```
+$ npm install
+$ npm test
+```
 
 ##### Steps to start
 ```
