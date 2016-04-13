@@ -1,0 +1,14 @@
+{
+  "name": "firststeps",
+  "version": "1.0.0",
+  "description": "Level 1 - Code school course: Building Blocks of Express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep Bajaj",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.8"
+  }
+}
