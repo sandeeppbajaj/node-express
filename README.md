@@ -9,16 +9,15 @@ Levels are mentioned in the read-me with appropriate notes and steps to start.
 ### Dependency
 Node
 
-### Level 5 - Route Instances
-- Using chaining for routes
-- Extracting routes to modules
-- Mounting router in the application
+### Soup to Bits
+- Export app as a module
+- Use www to start app module
 
 
 ##### Steps to start
 ```
-npm install
-node app.js
+$ npm install
+$ ./bin/www
 ```
 App starts at localhost:8080
 
