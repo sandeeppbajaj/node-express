@@ -9,12 +9,13 @@ Levels are mentioned in the read-me with appropriate notes and steps to start.
 ### Dependency
 Node
 
-### Level 2 - Middleware
-- Serving Files
-- Understanding Middleware
-- Serving static assets
-- Adding client side JavaScript
-- Write your own Middleware
+### Level 3 - User Params / Reading from url
+- Reading query string parameters
+- Creating dynamic route with path parameter
+- Responding with not found for invalid routes
+- Normalizing route parameter
+- Setting properties on the request object
+
 
 ##### Steps to start
 ```
@@ -23,27 +24,11 @@ node app.js
 ```
 App starts at localhost:8080
 
-##### Open in browser
-[http://localhost:8080](http://localhost:8080)
-
-##### Console output for custom logging Middleware
-
+##### Routes to try
 ```
-GET to /
- took 13ms
-
-GET to /style.css
- took 3ms
-
-GET to /blocks.jpeg
- took 3ms
-
-GET to /jquery.js
- took 2ms
-
-GET to /client.js
- took 1ms
-
-GET to /blocks
- took 3ms
+curl -i http://localhost:8080/blocks
+curl -i http://localhost:8080/blocks/Fixed
+curl -i http://localhost:8080/blocks/fixed
+curl -i http://localhost:8080/blocks/Movable
+curl -i http://localhost:8080/locations/fixed
 ```
