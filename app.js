@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var parserUrlencoded = bodyParser.urlencoded({extended: false});
 
 // Using the local logger module
 var logger = require('./logger.js');
@@ -36,6 +38,18 @@ app.get('/blocks', function (request, response) {
   } else {
       response.json(blockKeys);
   }
+});
+
+// Route for adding new block
+app.post('/blocks', parserUrlencoded, function(request, response) {
+  var block = request.body;
+  blocks[block.name] = block.description;
+  response.status(201).json(block.name);
+});
+
+app.delete('/blocks/:name', function(request, response) {
+  delete blocks[request.blockName];
+  response.sendStatus(200);
 });
 
 //Route for sending the block description as json for client ajax call
