@@ -1,5 +1,5 @@
 {
-  "name": "firststeps",
+  "name": "node-express",
   "version": "1.0.0",
   "description": "Level 1 - Code school course: Building Blocks of Express.js",
   "main": "app.js",
