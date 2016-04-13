@@ -10,8 +10,7 @@ Levels are mentioned in the read-me with appropriate notes and steps to start.
 Node
 
 ### Soup to Bits
-- Add dependency for test modules
-- Write test
+- Add Procfile for Heroku Deployment
 
 ##### Steps to test
 ```
@@ -19,7 +18,7 @@ $ npm install
 $ npm test
 ```
 
-##### Steps to start
+##### Steps to start in local
 ```
 $ npm install
 $ ./bin/www
