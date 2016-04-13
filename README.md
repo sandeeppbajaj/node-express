@@ -9,11 +9,10 @@ Levels are mentioned in the read-me with appropriate notes and steps to start.
 ### Dependency
 Node
 
-### Level 4 - Body Parser
-- Post request from client
-- Create POST route
-- Create DELETE route
-- Responding with status
+### Level 5 - Route Instances
+- Using chaining for routes
+- Extracting routes to modules
+- Mounting router in the application
 
 
 ##### Steps to start
