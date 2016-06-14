@@ -6,7 +6,7 @@ var logger = require('./logger.js');
 app.use(logger);
 
 //Binding static folder instead of writing routes for each public file
-app.use(express.static('public'));
+app.use(express.static('public', {maxAge: 86400000}));
 
 //Require the routes module for blocks
 var blocks = require('./routes/blocks');
